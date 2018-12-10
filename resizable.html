@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery UI Resizable - Default functionality</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <style>
+        #resizable { width: 150px; height: 150px; padding: 0.5em; }
+        #resizable h3 { text-align: center; margin: 0; }
+    </style>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $( function() {
+            $( "#resizable" ).resizable();
+        } );
+    </script>
+
+</head>
+<body>
+    <div class="header">
+        <h2>Resizable</h2>
+        <h3>Ý nghĩa</h3>
+        <p>Thay đổi kích thước của một phần tử bằng chuột..</p>
+    </div>
+<div class="head">
+    <h3>Cú pháp</h3>
+    <p>Kích hoạt sự kiện thay đổi kích thước cho các thành phần được chọn:</p>
+    <p>$(selector).resize()</p>
+    <h4>Đính kèm một chức năng cho sự kiện tái hiện:</h4>
+    <p>$(selector).resize(function)</p>
+</div>
+<div class="content">
+    <h3>Demo</h3>
+    <div id="resizable" class="ui-widget-content">
+        <h3 class="ui-widget-header">Resizable</h3>
+    </div>
+</div>
+</body>
+</html>
